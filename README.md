@@ -61,11 +61,11 @@ The basic TypeScript workflow:
 
 ```text
 TypeScript (.ts)
-       ↓
+       |
 TypeScript Compiler (tsc)
-       ↓
+       |
 JavaScript (.js)
-       ↓
+       |
 Node.js / Browser
 ```
 
