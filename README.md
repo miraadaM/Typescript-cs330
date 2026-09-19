@@ -44,6 +44,7 @@ npx tsc
 node dist/helloWorld.js
 
 My Current project structure:
+```text
 PLP_PROJECT/
 ├── src/
 │   └── helloWorld.ts
@@ -52,12 +53,13 @@ PLP_PROJECT/
 ├── README.md
 ├── .gitignore
 └── tsconfig.json
-
+```
 ## How to comment:
 Single-Line Comments (//)
 
 The basic TypeScript workflow:
 
+```text
 TypeScript (.ts)
        ↓
 TypeScript Compiler (tsc)
@@ -65,6 +67,7 @@ TypeScript Compiler (tsc)
 JavaScript (.js)
        ↓
 Node.js / Browser
+```
 
 # **References**
 
