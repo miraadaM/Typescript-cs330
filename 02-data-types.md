@@ -23,21 +23,21 @@ Unlike some programming languages TypeScript does not have separate int and floa
 ### Strings
 The string type represents text.
 
-```
+```typescript
 let name: string = "Bella";
 let language: string = "TypeScript";
 ```
 
 Strings can be written using single quotes, double quotes, or template literals.
 
-```
+```typescript
 let greeting: string = `Hello, ${name}!`;
 ```
 
 ### Boolean
 The boolean type represents a logical value: true or false.
 
-```
+```typescript
 let isStudent: boolean = true;
 let isFinished: boolean = false;
 ```
@@ -45,18 +45,20 @@ let isFinished: boolean = false;
 ### Arrays
 Arrays store multiple values. TypeScript allows the programmer to specify the type of values that an array should contain.
 
-```
+```typescript
 let scores: number[] = [90, 85, 95];
 let courses: string[] = ["Math", "Computer Science", "Data Science"];
 ```
 Another syntax for arrays is:
 
-```let scores: Array<number> = [90, 85, 95];```
+```typescript
+let scores: Array<number> = [90, 85, 95];
+```
 
 ### Object Types
 Objects can contain multiple related properties. TypeScript can describe the types of those properties.
 
-```
+```typescript
 let student: {
     name: string;
     age: number;
@@ -73,7 +75,7 @@ This allows TypeScript to check that the object contains the expected types of v
 ### null and undefined
 TypeScript also has the types null and undefined.
 
-```
+```typescript
 let emptyValue: null = null;
 let notAssigned: undefined = undefined;
 ```
@@ -96,7 +98,7 @@ TypeScript also provides more advanced types, including:
 # Variables and Naming Conventions
 Variables in TypeScript can be declared using let and const.
 
-```
+```typescript
 let score: number = 90;
 score = 95;
 const language: string = "TypeScript";
@@ -118,11 +120,15 @@ One of the main differences between TypeScript and JavaScript is that TypeScript
 
 A variable can have a declared type:
 
-```let age: number = 20;```
+```typescript
+let age: number = 20;
+```
 
 If the programmer later tries to assign a string to that variable:
 
-```age = "twenty";```
+```typescript
+age = "twenty";
+```
 
 TypeScript reports an error during compilation.
 
@@ -138,7 +144,7 @@ TypeScript supports both explicit and implicit typing.
 
 The programmer directly specifies the type:
 
-```
+```typescript
 let age: number = 20;
 let name: string = "Name";
 let isStudent: boolean = true;
@@ -147,7 +153,7 @@ Implicit typing
 
 TypeScript can often infer the type from the value assigned to a variable.
 
-```
+```typescript
 let age = 20;
 let name = "Name";
 let isStudent = true;
@@ -172,7 +178,7 @@ However, const does not make every object or array completely immutable.
 
 For example:
 
-```
+```typescript
 const courses: string[] = ["Math", "Computer Science"];
 courses.push("Data Science");
 ```
@@ -185,7 +191,8 @@ Therefore, const prevents reassignment of the variable itself rather than automa
 
 TypeScript supports the common operators inherited from JavaScript.
 
-Arithmetic operators
+Arithmetic operators:
+```typescript
 let a: number = 10;
 let b: number = 3;
 
@@ -194,22 +201,25 @@ console.log(a - b);
 console.log(a * b);
 console.log(a / b);
 console.log(a % b);
+```
 
 These operators perform arithmetic operations on numbers.
 
-Comparison operators
+Comparison operators:
+```typescript
 console.log(a > b);
 console.log(a < b);
 console.log(a === b);
 console.log(a !== b);
+```
 
 Comparison operations produce a boolean result.
 
 Logical operators work with boolean expressions.
 
-Assignment operators
+Assignment operators:
 
-```
+```typescript
 let score: number = 10;
 
 score += 5;
@@ -225,7 +235,7 @@ TypeScript checks whether operations make sense based on the types involved.
 
 For example, adding two numbers performs arithmetic:
 
-```
+```typescript
 let x: number = 10;
 let y: number = 5;
 
@@ -234,7 +244,7 @@ console.log(x + y); // 15
 
 Adding strings performs string concatenation:
 
-```
+```typescript
 let schoolName: string = "Simmons";
 let university: string = "University";
 
@@ -245,7 +255,7 @@ TypeScript does not allow arbitrary operations between incompatible types.
 
 For example:
 
-```
+```typescript
 let age: number = 20;
 let name: string = "Bella";
 
@@ -256,7 +266,7 @@ JavaScript does allow some automatic type conversions in certain operations. Bec
 
 Explicit conversion can be used when a value needs to be changed to another type:
 
-```
+```typescript
 let textNumber: string = "25";
 let numberValue: number = Number(textNumber);
 
@@ -271,7 +281,9 @@ A variable declaration creates a binding between a name and a value.
 
 For example:
 
-```let score: number = 90;```
+```typescript
+let score: number = 90;
+```
 
 The name score is associated with the value 90.
 
@@ -281,7 +293,7 @@ Basic types are useful for individual values, but larger programs usually need t
 
 ### Arrays
 
-```
+```typescript
 let grades: number[] = [90, 85, 95];
 Objects
 let student = {
@@ -295,7 +307,9 @@ let student = {
 
 A tuple represents a fixed sequence of values where each position can have a specific type.
 
-let studentInfo: [string, number] = ["Mirada", 20];
+```typescript
+let studentInfo: [string, number] = ["Bella", 17];
+```
 
 The first value must be a string and the second value must be a number.
 
@@ -303,7 +317,7 @@ The first value must be a string and the second value must be a number.
 
 A union allows a value to have more than one possible type.
 
-```
+```typescript
 let id: number | string;
 
 id = 123;
@@ -314,7 +328,7 @@ id = "ABC123";
 
 Interfaces can describe the structure of objects.
 
-```
+```typescript
 interface Student {
     name: string;
     age: number;
@@ -322,8 +336,8 @@ interface Student {
 }
 
 let student: Student = {
-    name: "Mirada",
-    age: 20,
+    name: "Bella",
+    age: 17,
     major: "Computer Science"
 };
 ```
@@ -338,7 +352,9 @@ One limitation is that TypeScript's type checking mainly happens during developm
 
 For example:
 
-```let age: number = 20;```
+```typescript
+let age: number = 20;
+```
 
 The type annotation helps TypeScript check the program, but JavaScript ultimately executes the resulting code.
 
@@ -346,7 +362,9 @@ TypeScript also provides escape hatches such as any and type assertions.
 
 For example:
 
-```let value: any = "hello";```
+```typescript
+let value: any = "hello";
+```
 
 Using any reduces the protection provided by the type system because TypeScript allows many operations on an any value without checking them strictly.
 
