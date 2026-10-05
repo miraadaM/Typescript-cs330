@@ -34,10 +34,10 @@ This creates a tsconfig.json file, which contains configuration options for the 
 
 # Running your file
 1. My first program is "Hello World". I saved it as helloWorld.ts:
-
+```typescript
 let message: string = "Hello, World!";
 console.log(message);
-
+```
 2. To compile the TypeScript program into JavaScript, use:
 npx tsc
 3. Then run generated JavaScript file using:
@@ -75,6 +75,16 @@ Node.js / Browser
 
 # **References**
 
-- [link](https://medium.com/totally-typescript/a-brief-history-of-typescript-from-origin-to-modern-adoption-791368ec4b91)
+- **Dr. Derek Austin, A Brief History of TypeScript: From Origin to Modern Adoption** [link](https://medium.com/totally-typescript/a-brief-history-of-typescript-from-origin-to-modern-adoption-791368ec4b91)
   
 - **Alheraki, A. (n.d.). The story of TypeScript and how it enhanced JavaScript’s power** [link](https://simplifycpp.org/articles/a0603/the-story-of-typescript-and-how-it-enhanced-javascript-s-power/)
+
+- **Handbook - Basic Types, n.d.** [link](https://www.typescriptlang.org/docs/handbook/basic-types.html)
+  
+- **GeeksforGeeks. (2022, August 9). How Typescript is optionally statically typed language ?** [link](https://www.geeksforgeeks.org/typescript/how-typescript-is-optionally-statically-typed-language/)
+  
+- **TS Playground - An online editor for exploring TypeScript and JavaScript. (n.d.).** [link](https://www.typescriptlang.org/play/?#example/immutability)
+  
+- **GeeksforGeeks. (2024, July 25). Advantages and Disadvantages of TypeScript over JavaScript.** [link](https://www.geeksforgeeks.org/javascript/advantages-and-disadvantages-of-typescript-over-javascript/)
+  
+- **KJ Schelling, A Comprehensive Guide to Naming Conventions in JavaScrip** [link](https://medium.com/@kjschelling/a-comprehensive-guide-to-naming-conventions-in-javascript-46a7518e4807)
