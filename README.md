@@ -1,4 +1,4 @@
-# TypeScript
+# TypeScript Tutorial
 
 ## Introduction
 TypeScript is a programming language developed by Microsoft. It is a superset of JavaScript, which means that TypeScript adds additional features to JavaScript while remaining compatible with it.
@@ -68,6 +68,10 @@ JavaScript (.js)
        |
 Node.js / Browser
 ```
+
+## Data Types and Variables
+
+[Read the Data Types Tutorial](02-data-types.md)
 
 # **References**
 
