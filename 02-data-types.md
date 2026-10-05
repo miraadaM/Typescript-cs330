@@ -12,7 +12,7 @@ TypeScript supports several basic data types.
 
 ### Number
 
-The `number` type is used for both integers and floating-point numbers.
+The number type is used for both integers and floating-point numbers.
 
 ```typescript
 let age: number = 20;
@@ -148,9 +148,8 @@ The programmer directly specifies the type:
 let age: number = 20;
 let name: string = "Name";
 let isStudent: boolean = true;
-Implicit typing
 ```
-
+**Implicit typing**
 TypeScript can often infer the type from the value assigned to a variable.
 
 ```typescript
@@ -297,8 +296,8 @@ Basic types are useful for individual values, but larger programs usually need t
 let grades: number[] = [90, 85, 95];
 Objects
 let student = {
-    name: "Mirada",
-    age: 20,
+    name: "Bella",
+    age: 23,
     major: "Computer Science"
 };
 ```
