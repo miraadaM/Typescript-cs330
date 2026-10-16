@@ -72,6 +72,12 @@ Node.js / Browser
 ## Data Types and Variables
 
 [Read the Data Types Tutorial](02-data-types.md)
+Code with examples is provided named exampleCode.ts
+
+## Selection, Loops and Conditionals
+
+[Read selection, Loops and Conditionals Tutorial](03-Selection_Loops_Conditionals.md)
+Code with examples is provided named exampleCode_loop.ts
 
 # **References**
 
