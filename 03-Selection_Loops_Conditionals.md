@@ -3,7 +3,7 @@
 ## Boolean Values and conditions
 TypeScript uses two boolean values: true and false. Boolean values are written in lowercase.
 
-JavaScript also allows truthy and falsy values in conditions. For example, 0, "", null, and undefined are falsy, while most other values are truthy. However, TypeScript's static type checker can reject some values in conditions when their types are incompatible with the expected boolean condition. Using explicit boolean expressions generally makes programs easier to understand.
+JavaScript also allows truthy and falsy values in conditions. For example, 0, "", null, and undefined are falsy, while most other values are truthy. 
 
 ## if/else statements
 - One-condition:
