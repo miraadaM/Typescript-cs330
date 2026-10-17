@@ -94,3 +94,4 @@ Code with examples is provided named exampleCode_loop.ts
 - **GeeksforGeeks. (2024, July 25). Advantages and Disadvantages of TypeScript over JavaScript.** [link](https://www.geeksforgeeks.org/javascript/advantages-and-disadvantages-of-typescript-over-javascript/)
   
 - **KJ Schelling, A Comprehensive Guide to Naming Conventions in JavaScrip** [link](https://medium.com/@kjschelling/a-comprehensive-guide-to-naming-conventions-in-javascript-46a7518e4807)
+- **Documentation - conditional types. (n.d.).** 
