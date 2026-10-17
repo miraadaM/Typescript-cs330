@@ -6,18 +6,18 @@ TypeScript uses two boolean values: true and false. Boolean values are written i
 JavaScript also allows truthy and falsy values in conditions. For example, 0, "", null, and undefined are falsy, while most other values are truthy. However, TypeScript's static type checker can reject some values in conditions when their types are incompatible with the expected boolean condition. Using explicit boolean expressions generally makes programs easier to understand.
 
 ## if/else statements
-One-condition:
-``
+- One-condition:
+```typescript
 let age: number = 20;
 
 if (age >= 18) {
     console.log("The person is an adult.");
 } else {
     console.log("Person is less than 18 years old");
-``
+```
 
-A multi-condition:
-``
+- A multi-condition:
+```typescript
 let age: number = 20;
 let hasStudentID: boolean = true;
 
@@ -26,10 +26,10 @@ if (age >= 18 && hasStudentID) {
 } else {
     console.log("At least one condition is false.");
 }
+```
 
-``
-
-if/elif statements
+- if/else if statements
+```typescript
 let score: number = 85;
 
 if (score >= 90) {
@@ -41,6 +41,7 @@ if (score >= 90) {
 } else {
     console.log("Grade below C");
 }
+```
 
 ## Code Blocks and the Dangling Else
 
@@ -52,6 +53,7 @@ This is known as the **dangling else problem**: without clear braces, nested con
 
 With &&, if the left side is false, the right side is not evaluated because the entire AND expression must be false.
 
+```typescript
 let number: number = 0;
 
 if (number !== 0 && 10 / number > 1) {
@@ -59,11 +61,13 @@ if (number !== 0 && 10 / number > 1) {
 } else {
     console.log("The condition is false.");
 }
+```
 
 Because number !== 0 is false, the division condition on the right is skipped.
 
 With ||, if the left side is true, the right side is skipped because the entire OR expression must be true.
 
+```typescript
 let isAdmin: boolean = true;
 
 if (isAdmin || checkPermission()) {
@@ -74,6 +78,7 @@ function checkPermission(): boolean {
     console.log("Checking permission...");
     return false;
 }
+```
 
 In this example, checkPermission() is not called because isAdmin is already true. 
 
