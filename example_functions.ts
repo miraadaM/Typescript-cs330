@@ -48,7 +48,7 @@ console.log("Original number:", originalNumber); // 10
 function changeName(person: { name: string }): void {
     person.name = "Alex";
 }
-const student = { name: "Mirada" };
+const student = { name: "Cat" };
 changeName(student);
 console.log("Updated name:", student.name); // Alex
 
