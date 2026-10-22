@@ -44,5 +44,5 @@ function introduce(name: string, age: number): string {
 Typescript supports default parameter valus
 
 # **References**
-- ***Handbook - Functions. (n.d.)*[https://www.typescriptlang.org/docs/handbook/functions.html]
+- ***Handbook - Functions. (n.d.)** [link](https://www.typescriptlang.org/docs/handbook/functions.html)
 
