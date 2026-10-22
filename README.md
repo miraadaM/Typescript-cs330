@@ -79,6 +79,11 @@ Code with examples is provided named exampleCode.ts
 [Read selection, Loops and Conditionals Tutorial](03-Selection_Loops_Conditionals.md)
 Code with examples is provided named exampleCode_loop.ts
 
+## Functions
+
+[Read about functions](04-functions.md)
+Code with examples is provided named example_functions.ts
+
 # **References**
 
 - **Dr. Derek Austin, A Brief History of TypeScript: From Origin to Modern Adoption** [link](https://medium.com/totally-typescript/a-brief-history-of-typescript-from-origin-to-modern-adoption-791368ec4b91)
