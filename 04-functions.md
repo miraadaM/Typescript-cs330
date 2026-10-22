@@ -38,11 +38,34 @@ function introduce(name: string, age: number): string {
   }
   const [first, second] = splitText("TypeScript");
   ```
+## Pass-by value
+TypeScript uses JavaScript's argument-passing behavior: arguments are **passed by value**. When an object is passed to a function, the copied value is a reference to that object. This means the function can modify the object's properties, but reassigning its parameter does not change the caller's variable.
+```Typescript
+// testing pass-by-value with a primitive
+function changeNumber(value: number): void {
+    value = 100;
+}
+let originalNumber: number = 10;
+changeNumber(originalNumber);
+console.log("Original number:", originalNumber); // 10
 
+// testing pass-by-value with an object reference
+function changeName(person: { name: string }): void {
+    person.name = "Alex";
+}
+const student = { name: "Cat" };
+changeName(student);
+console.log("Updated name:", student.name); // Alex
+```
+The number remains unchanged because the parameter receives a copy of its value. The object changes because the copied reference still points to the same object.
+
+## Scoping rules & Memory & Side effects
+- TypeScript uses **lexical (static) scope**: where a variable is declared determines where it can be accessed. A local binding is not available outside its scope, although an object or value can remain accessible if it is returned or captured by a closure.
+- JavaScript engines manage memory automatically. Function calls generally use execution contexts and call-stack mechanisms, while objects are commonly allocated in managed memory. However, the exact physical storage of parameters and local variables depends on the JavaScript engine and its optimizations. It is not accurate to claim that every variable always lives on the stack or every object always lives on the heap.
+- A side effect occurs when a function changes something outside its own result, such as modifying an object or a global variable, or printing to the console.
   
 ## Other important aspects
 Typescript supports default parameter valus
 
 # **References**
 - ***Handbook - Functions. (n.d.)** [link](https://www.typescriptlang.org/docs/handbook/functions.html)
-
