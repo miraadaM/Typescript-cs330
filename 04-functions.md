@@ -43,3 +43,6 @@ function introduce(name: string, age: number): string {
 ## Other important aspects
 Typescript supports default parameter valus
 
+# **References**
+- ***Handbook - Functions. (n.d.)*[https://www.typescriptlang.org/docs/handbook/functions.html]
+
