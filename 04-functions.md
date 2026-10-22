@@ -68,4 +68,4 @@ The number remains unchanged because the parameter receives a copy of its value.
 Typescript supports default parameter valus
 
 # **References**
-- ***Handbook - Functions. (n.d.)** [link](https://www.typescriptlang.org/docs/handbook/functions.html)
+- **Handbook - Functions. (n.d.)** [link](https://www.typescriptlang.org/docs/handbook/functions.html)
